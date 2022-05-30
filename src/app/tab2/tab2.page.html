@@ -1,0 +1,198 @@
+
+
+<ion-content>
+
+<div class="container1">
+
+<p>Welcome to Edward E. Obomanu & Co
+</p>
+
+
+
+
+</div>
+
+<div>
+
+
+      <swiper [pagination]="true" class="product-slider" [slidesPerView]="" [loop]="true"  effect="fade"  [spaceBetween]="20">
+
+
+        <ng-template swiperSlide>
+          <img [defaultImage]="'https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921'" [lazyLoad]="'https://live.staticflickr.com/5655/22092524311_685f91d90f_z.jpg'">
+
+        </ng-template>
+
+        <ng-template swiperSlide>
+          <img [defaultImage]="'https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921'" [lazyLoad]="'https://media.istockphoto.com/photos/bitcoin-symbol-and-gavel-to-regulate-cryptocurrencies-market-picture-id1328513560?k=20&m=1328513560&s=612x612&w=0&h=NNq00Apktjdw_dBVgk0tnON6KDYw0UJpj-3bwD1qX-A='">
+        </ng-template>
+        <ng-template swiperSlide>
+          <img [defaultImage]="'https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921'" [lazyLoad]="'https://www.marineinsight.com/wp-content/uploads/2021/06/Top-5-Important-Books-on-Maritime-Law.png'">
+        </ng-template>
+
+        <ng-template swiperSlide>
+          <img [defaultImage]="'https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921'" [lazyLoad]="'/assets/follow me on pinterest @tequierobabe.jpg'">
+        </ng-template>
+
+        <ng-template swiperSlide>
+          <img [defaultImage]="'https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921'" [lazyLoad]="'/assets/Homem é condenado por sacar aposentadoria de mãe falecida _ Juristas.jpg'">
+        </ng-template>
+
+
+        <ng-template swiperSlide>
+          <img [defaultImage]="'https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921'" [lazyLoad]="'
+          https://thumbs.dreamstime.com/b/commercial-law-gavel-table-commercial-law-gavel-105441879.jpg'">
+        </ng-template>
+
+        <ng-template swiperSlide>
+
+          <img [defaultImage]="'https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921'" [lazyLoad]="'https://www.hkiaacademy.com/files/course_file/50/Hong-Kong-International-Aviation-Academy-Introduction-to-Aviation-Law.jpg'"></ng-template>
+
+      </swiper>
+
+
+<div class="seg">
+  <ion-segment  [(ngModel)]="type" swipe-gesture="true" >
+    <ion-segment-button value="friends" checked >
+      <ion-label>Practice</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="enemies" >
+      <ion-label>more</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div class="container2" [ngSwitch]="type">
+<div class="thumbsbackground" [routerLink]="['/two']" routerLinkActive="router-link-active">
+<ion-item item lines="none" *ngSwitchCase="'friends'">
+  <div class="thumbsback">
+    <ion-thumbnail slot="start">
+      <img src="/assets/apps-sort.svg">
+    </ion-thumbnail>
+  </div>
+
+  <ion-label>
+    <h2>Corporate law practice</h2>
+    <h2>more details </h2>
+  </ion-label>
+  </ion-item>
+</div>
+
+  <div class="thumbsbackground" [routerLink]="['/three']" routerLinkActive="router-link-active">
+<ion-item item lines="none" *ngSwitchCase="'friends'">
+  <div class="thumbsback">
+    <ion-thumbnail slot="start">
+      <img src="/assets/apps-sort.svg">
+    </ion-thumbnail>
+  </div>
+
+  <ion-label>
+    <h2>Maritime law</h2>
+    <h2>more details </h2>
+  </ion-label>
+  </ion-item>
+</div>
+
+  <div class="thumbsbackground" [routerLink]="['/four']" routerLinkActive="router-link-active">
+<ion-item item lines="none" *ngSwitchCase="'friends'">
+  <div class="thumbsback">
+    <ion-thumbnail slot="start">
+      <img src="/assets/apps-sort.svg">
+    </ion-thumbnail>
+  </div>
+
+  <ion-label>
+    <h2>Oil and Gas</h2>
+    <h2>more details </h2>
+  </ion-label>
+  </ion-item>
+</div>
+
+  <div class="thumbsbackground" [routerLink]="['/five']" routerLinkActive="router-link-active">
+  <ion-item item lines="none" *ngSwitchCase="'friends'">
+    <div class="thumbsback">
+      <ion-thumbnail slot="start">
+        <img src="/assets/apps-sort.svg">
+      </ion-thumbnail>
+    </div>
+
+    <ion-label>
+      <h2>Political Cases</h2>
+      <h2>more details </h2>
+    </ion-label>
+    </ion-item>
+  </div>
+
+
+<!-- Second Segment-->
+<div class="thumbsbackground" [routerLink]="['/six']" routerLinkActive="router-link-active">
+<ion-item item lines="none" *ngSwitchCase="'enemies'">
+  <div class="thumbsback">
+    <ion-thumbnail slot="start">
+      <img src="/assets/apps-sort.svg">
+    </ion-thumbnail>
+  </div>
+
+  <ion-label>
+    <h2>Debt Recoveries</h2>
+    <h2>more details </h2>
+  </ion-label>
+  </ion-item>
+</div>
+
+
+  <div class="thumbsbackground" [routerLink]="['/seven']" routerLinkActive="router-link-active">
+<ion-item item lines="none" *ngSwitchCase="'enemies'">
+  <div class="thumbsback">
+    <ion-thumbnail slot="start">
+      <img src="/assets/apps-sort.svg">
+    </ion-thumbnail>
+  </div>
+
+  <ion-label>
+    <h2>Tax law</h2>
+    <h2>more details </h2>
+  </ion-label>
+  </ion-item>
+</div>
+
+  <div class="thumbsbackground" [routerLink]="['/eight']" routerLinkActive="router-link-active">
+<ion-item item lines="none" *ngSwitchCase="'enemies'">
+  <div class="thumbsback">
+    <ion-thumbnail slot="start">
+      <img src="/assets/apps-sort.svg">
+    </ion-thumbnail>
+  </div>
+
+  <ion-label>
+    <h2>Insurance law</h2>
+    <h2>more details </h2>
+  </ion-label>
+  </ion-item>
+</div>
+
+  <div class="thumbsbackground" [routerLink]="['/nine']" routerLinkActive="router-link-active">
+  <ion-item item lines="none" *ngSwitchCase="'enemies'">
+    <div class="thumbsback">
+      <ion-thumbnail slot="start">
+        <img src="/assets/apps-sort.svg">
+      </ion-thumbnail>
+    </div>
+
+    <ion-label>
+      <h2>Company secretarial services</h2>
+      <h2>more details </h2>
+    </ion-label>
+    </ion-item>
+  </div>
+
+
+<!-- end of 2nd segment-->
+</div>
+
+</div>
+
+
+
+
+</ion-content>

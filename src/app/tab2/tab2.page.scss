@@ -1,0 +1,147 @@
+ion-content{
+  --ion-background-color: #ffffff !important;
+
+}
+
+.container1{
+padding-top: 20px;
+  background-color: #394856 !important;
+  height: 50%;
+  border-radius: 0px 0px 40px 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+
+}
+
+ion-item{
+
+  --background: none !important;
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  margin-right: 30px;
+
+  /*
+  border-right: 1rem solid;
+  border-right-color: #394856;
+  border-right-width: 20px;
+*/
+  ion-icon{
+    color:#394856;
+  }
+
+}
+
+h2{
+  color:#000000;
+}
+
+
+
+
+.seg{
+  margin-left:20px;
+  margin-right:20px;
+  margin-bottom: 30px;
+  transform: translateY(-120%);
+
+}
+
+.container2{
+  transform: translateY(-20%);
+}
+ion-segment{
+  --background:#ffffff;
+  border-radius:30px;
+  --border-style:none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+
+
+}
+
+
+
+ion-segment-button{
+  --background:#ffffff;
+  --color:#000000;
+  --indicator-color:transparent;
+  --indicator-height:5px;
+  --background-checked:#F9F871; //buuton background whenrn
+  --color-checked:#000000; //Font color WHEN CHECKED
+
+
+}
+
+
+
+p {
+  color: rgb(255, 255, 255);
+  padding:20px;
+  text-align:center;
+  font-size:25px;
+  font-family: 'SourceSansPro-Bold' ;
+}
+
+
+.welcome{
+  float:right;
+  color:red;
+}
+
+
+//first law css
+.product-slider {
+margin-top: 10px;
+padding-left: 20px;
+padding-right: 20px;
+transform: translateY(-70%);
+img {
+    width: 85%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color:  #394856;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px 0px;
+  }
+
+
+
+}
+
+
+
+
+  .para{
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    font-size:40px;
+    padding-left: 10px;
+
+  }
+
+
+.thumbsback{
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  ion-thumbnail{
+
+    --background-color:#394856;
+
+  }
+}
+
+
+ion-label{
+  --color:#394856;
+
+
+
+}
